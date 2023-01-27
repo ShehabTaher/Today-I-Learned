@@ -10,70 +10,103 @@
 </head>
 
 <body>
-    <header>
-        <img src="logo.png" height="68px" width="68px" alt="Today I Learned Logo">
-        <h1>Today I Learned</h1>
-        <button>SHARE A FACT</button>
-    </header>
-    <form>
-        <input type="text" placeholder="Share a fact with the world...">
-        <span>200</span>
-        <input type="text" placeholder="Trustworthy source...">
-        <select>
-            <option value="">Choose category:</option>
-            <option value="technology">Technology</option>
-            <option value="science">Science</option>
-            <option value="finance">Finance</option>
-        </select>
-        <button>Post</button>
-    </form>
-    <main>
-        <aside>
-            <ul>
-                <li><button>ALL</button></li>
-                <li><button>TECHNOLOGY</button></li>
-                <li><button>SCIENCE</button></li>
-                <li><button>FINANCE</button></li>
-                <li><button>SOCIETY</button></li>
-                <li><button>ENTERTAINMENT</button></li>
-                <li><button>HEALTH</button></li>
-                <li><button>HISTORY</button></li>
-                <li><button>NEWS</button></li>
-            </ul>
-        </aside>
-        <section>
-
-            <ul>
-                <li>
-                    <p>React is being developed by Meta (formerly facebook)
-                        <a href="https://opensource.fb.com/" target="_blank">Source</a>
-                        <span>#Technology#</span>
-                    <div>
-                        <button>👍 <strong>40</strong></button>
-                        <button>🤯 <strong>5</strong></button>
-                        <button>⛔️ <strong>2</strong></button>
-                    </div>
-                    </p>
-                </li>
-                <li>
-                    <p> text: "Millennial dads spend 3 times as much time with their kids than their fathers spent with
-                        them. In
-                        1982,
-                        43% of fathers had never changed a diaper. Today, that number is down to 3%
-                        <a href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
-                            target="_blank">Source</a>
-                        <span>#society</span>
-                        <div>
-                            <button>👍 <strong>40</strong></button>
-                            <button>🤯 <strong>5</strong></button>
-                            <button>⛔️ <strong>2</strong></button>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="logo.png" height="68px" width="68px" alt="Today I Learned Logo">
+                <h1>Today I Learned</h1>
+            </div>
+            <button class="btn btn-large">SHARE A FACT</button>
+        </header>
+        <!-- <div class="test">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">3</div>
+    <div class="child">4</div>
+    <div class="child">5</div>
+</div> -->
+        <form class="fact-form">
+            <input type="text" placeholder="Share a fact with the world...">
+            <span>200</span>
+            <input type="text" placeholder="Trustworthy source...">
+            <select>
+                <option value="">Choose category:</option>
+                <option value="technology">Technology</option>
+                <option value="science">Science</option>
+                <option value="finance">Finance</option>
+            </select>
+            <button class="btn btn-large">Post</button>
+        </form>
+        <main class="main">
+            <aside>
+                <ul>
+                    <li class="category"><button class="btn btn-all-categories">ALL</button></li>
+                    <li class="category"><button class="btn btn-category"
+                            style="background-color: #3b82f6;">TECHNOLOGY</button></li>
+                    <li class="category"><button class="btn btn-category"
+                            style="background-color: #16a34a;">SCIENCE</button></li>
+                    <li class="category"><button class="btn btn-category"
+                            style="background-color: #ef4444;">FINANCE</button></li>
+                    <li class="category"><button class="btn btn-category"
+                            style="background-color: #eab308;">SOCIETY</button></li>
+                    <li class="category"><button class="btn btn-category"
+                            style="background-color: #db2777;">ENTERTAINMENT</button></li>
+                    <li class="category"><button class="btn btn-category"
+                            style="background-color: #14b8a6;">HEALTH</button></li>
+                    <li class="category"><button class="btn btn-category"
+                            style="background-color: #f97316;">HISTORY</button></li>
+                    <li class="category"><button class="btn btn-category"
+                            style="background-color: #8b5cf6;">NEWS</button></li>
+                </ul>
+            </aside>
+            <section>
+                <ul>
+                    <li class="fact">
+                        <p>React is being developed by Meta (formerly facebook)
+                            <a class="source" href="https://opensource.fb.com/" target="_blank">Source</a>
+                        </p>
+                        <span class="tag" style="background-color: #3b82f6;">#Technology#</span>
+                        <div class="vote-buttons">
+                            <button>👍40</button>
+                            <button>🤯5</button>
+                            <button>⛔️2</button>
                         </div>
-                    </p>
-                </li>
-            </ul>
-        </section>
-    </main>
 
+                    </li>
+
+                    <li class="fact">
+                        <p>React<a class="source" href="https://opensource.fb.com/" target="_blank">Source</a>
+                        </p>
+                        <span class="tag" style="background-color: #3b82f6;">#Technology#</span>
+                        <div class="vote-buttons">
+                            <button>👍40</button>
+                            <button>🤯5</button>
+                            <button>⛔️2</button>
+                        </div>
+                    </li>
+
+                    <li class="fact">
+                        <p> text: "Millennial dads spend 3 times as much time with their kids than their fathers spent
+                            with
+                            them. In
+                            1982,
+                            43% of fathers had never changed a diaper. Today, that number is down to 3%
+                            <a class="source"
+                                href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
+                                target="_blank">Source</a>
+                        </p>
+                        <span class="tag" style="background-color: #16a34a;">#society</span>
+                        <div class="vote-buttons">
+                            <button>👍40</button>
+                            <button>🤯5</button>
+                            <button>⛔️2</button>
+                        </div>
+
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
